@@ -1,0 +1,74 @@
+@import '../colors/colors.scss';
+.container-menu {
+    width: clamp(30px, 10vw, 80px);
+    height: clamp(30px, 10vw, 80px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+    .container-lignes {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        overflow: hidden;
+        border: 1px solid $Midnight_green;
+
+        .ligne-1, .ligne-3 {
+            height: 10%;
+            width: 100px;
+            background-color: $Air_force_blue;
+        }
+        .ligne-2 {
+            background-color: $Air_force_blue;
+            height: 10%;
+        }
+    }
+}
+
+.clicked {
+    .ligne-1{animation: .5s forwards ease-in-out topLine;}
+    .ligne-2 {
+        width: 100px;
+        transform: rotate(0deg); 
+        transition: width 500ms, transform .5s;
+    }
+    .ligne-3{animation: .5s forwards ease-in-out bottomLine;}    
+}
+
+.unclicked {
+    .ligne-1{animation: .5s forwards ease-in-out topLineOut;}
+    .ligne-2 {
+        transition: width 500ms; 
+        width: 10px;
+        animation: 3s infinite cubic-bezier(.76,-0.01,.27,1.03) alternate-reverse middleLineIdle;
+    }
+    .ligne-3{animation: .5s forwards ease bottomLineOut;}
+}
+
+@keyframes middleLineIdle {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
+
+@keyframes topLineOut {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0%);}
+}
+
+@keyframes bottomLineOut {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+@keyframes topLine {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}
+}
+
+@keyframes bottomLine {
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
+}

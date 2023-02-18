@@ -1,14 +1,16 @@
 import './Main.scss';
+import BurgerMenu from './UI/BurgerMenu';
+import Logo from './UI/Logo';
 
 export default function Main() {
 
     return (
         <div className="main">
             <header className="header">
-                <div className='icon'>R</div>
-                <div className='burger'>=</div>
-                <section className="about"></section>
+                <Logo/>
+                <BurgerMenu/>
             </header>
+            <section className="about"></section>
         </div>
     );
 }

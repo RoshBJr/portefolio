@@ -1,0 +1,126 @@
+@import "../colors/colors.scss";
+
+.main .header .container-logo {
+    animation-play-state: paused;
+    width: clamp(50px, 10vw, 80px);
+    height: clamp(50px, 10vw, 80px);
+
+    .logo { font-size: clamp(30px, 10vw, 80px); }
+
+    .bottom-bar, .top-bar, .left-bar, .right-bar {
+        animation: loadingFadeOut paused;
+    }
+
+    .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }
+    .bottom-bar {animation: 300ms linear forwards animLogoFadeInBottom;}
+    .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
+    .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
+    
+}
+
+@keyframes animLogoFadeInTop {
+    from {transform: translateX(0%); opacity: 0;}
+    to {transform: translateX(-60%); opacity: 1;}
+
+}
+@keyframes animLogoFadeInBottom {
+    from {transform: translateX(0%); opacity: 0;}
+    to {transform: translateX(60%); opacity: 1;}
+}
+@keyframes animLogoFadeInLeft {
+    from {transform: translateY(0%);opacity: 0;}
+    to {transform: translateY(-60%);opacity: 1;}
+}
+@keyframes animLogoFadeInRight {
+    from {transform: translateY(0%); opacity: 0;}
+    to {transform: translateY(60%); opacity: 1;}
+}
+
+.container-logo {
+    overflow: hidden;
+    position: relative;
+    width: clamp(120px, 15vw, 200px);
+    height: clamp(120px, 15vw, 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 500ms 3s forwards loadingFadeOut;
+    
+    .top-bar, .bottom-bar {
+        position: absolute;
+        width: 100%;
+        background-color: $Air_force_blue;
+        height: 10%;
+    }
+    
+    .right-bar, .left-bar {
+        position: absolute;
+        height: 100%;
+        width: 10%;
+        background-color: $Air_force_blue;
+    }
+    
+    .right-bar {
+        right: 0;
+        animation: 3s infinite ease-in-out verticalAnimRight, 500ms 3s forwards loadingFadeOut;
+    }
+    
+    .left-bar {
+        left: 0;
+        animation: 3s infinite ease-in-out verticalAnimLeft, 500ms 3s forwards loadingFadeOut;
+    }
+    
+    .top-bar {
+        transform: translateX(-100%);
+        top: 0;
+        animation: 3s infinite ease-in-out horizontalAnimTop, 500ms 3s forwards loadingFadeOut;
+    }
+    
+    .bottom-bar {
+        bottom: 0;
+        animation: 3s infinite ease-in-out horizontalAnimBottom, 500ms 3s forwards loadingFadeOut;
+    }
+    
+    .logo {
+        font-size: clamp(80px, 12vw, 150px);
+        color: $Ash_grey;
+    }
+}
+
+
+@keyframes horizontalAnimTop {
+    0% {transform: translateX(100%);}
+    25% {transform: translateX(100%);}
+    50% {transform: translateX(-100%);}
+    75% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
+}
+
+@keyframes horizontalAnimBottom {
+    0% {transform: translateX(-100%);}
+    25% {transform: translateX(-100%);}
+    50% {transform: translateX(100%);}
+    75% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
+@keyframes verticalAnimLeft {
+    0% {transform: translateY(100%);}
+    25% {transform: translateY(100%);}
+    50% {transform: translateY(-100%);}
+    75% {transform: translateY(-100%);}
+    100% {transform: translateY(100%);}
+}
+
+@keyframes verticalAnimRight {
+    0% {transform: translateY(-100%);}
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(100%);}
+    75% {transform: translateY(100%);}
+    100% {transform: translateY(-100%);}
+}
+
+@keyframes loadingFadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

@@ -1,20 +1,11 @@
 import './Loading.scss';
-// import logo  from '../logo.gif';
-
-let loadingGif = require("../media/loadingLogo.gif")
+import Logo from './UI/Logo';
 
 export default function Loading() {
     
     return (
         <div className="loading-container">
-            {/* <img className='logo' src={loadingGif} alt="Loading..." /> */}
-            <div className="container-logo">
-                <div className="top-bar"></div>
-                <div className="left-bar"></div>
-                <div className='logo'>R</div>
-                <div className="right-bar"></div>
-                <div className="bottom-bar"></div>
-            </div>
+            <Logo/>
             <div className="hide-gif"></div>
         </div>
     );

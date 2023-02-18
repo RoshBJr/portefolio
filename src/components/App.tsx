@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (<Loading/>) : (<Main/>) }
+      {/* {loading ? (<Loading/>) : (<Main/>) } */}
+      <Main/>
     </div>
   );
 }
