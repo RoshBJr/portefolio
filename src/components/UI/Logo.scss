@@ -1,22 +1,51 @@
 @import "../colors/colors.scss";
 
+/* ---------------------------------------------------------------
+                    LOGO FROM THE HEADER
+----------------------------------------------------------------*/
+
 .main .header .container-logo {
-    animation-play-state: paused;
     width: clamp(50px, 10vw, 80px);
     height: clamp(50px, 10vw, 80px);
+    animation-play-state: paused;
 
     .logo { font-size: clamp(30px, 10vw, 80px); }
-
-    .bottom-bar, .top-bar, .left-bar, .right-bar {
-        animation: loadingFadeOut paused;
-    }
-
+}
+.main .header .not-hover {
     .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }
     .bottom-bar {animation: 300ms linear forwards animLogoFadeInBottom;}
     .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
     .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
-    
 }
+.main .header .is-hover {
+
+    .logo {
+        color: $Air_force_blue;
+        transition: color 500ms;
+    }
+
+    .right-bar {
+        transform: translateY(60%);
+        animation: 2.5s 300ms infinite ease-in alternate verticalAnimRight, 200ms 200ms backwards loadingFadeOut;
+    }
+    
+    .left-bar {
+        transform: translateY(-60%);
+        animation: 2.5s 300ms infinite ease-in alternate verticalAnimLeft, 200ms 200ms backwards loadingFadeOut;
+    }
+    
+    .top-bar {
+        transform: translateX(-60%);
+        animation: 2.5s 300ms infinite ease-in alternate horizontalAnimTop, 200ms 200ms backwards loadingFadeOut;
+    }
+    
+    .bottom-bar {
+        transform: translateX(60%);
+        animation: 2.5s 300ms infinite ease-in alternate horizontalAnimBottom, 200ms 200ms backwards loadingFadeOut;
+    }
+}
+
+
 
 @keyframes animLogoFadeInTop {
     from {transform: translateX(0%); opacity: 0;}
@@ -35,6 +64,11 @@
     from {transform: translateY(0%); opacity: 0;}
     to {transform: translateY(60%); opacity: 1;}
 }
+
+
+/* ---------------------------------------------------------------
+                    LOGO FROM THE LOADING SCREEN
+----------------------------------------------------------------*/
 
 .container-logo {
     overflow: hidden;
@@ -84,6 +118,7 @@
     .logo {
         font-size: clamp(80px, 12vw, 150px);
         color: $Ash_grey;
+        transition: color 500ms;
     }
 }
 

@@ -9,12 +9,15 @@ export default function Logo() {
         setHovered(!hovered);
     }
 
+    const reloadPage = () => window.location.reload();
+
     return (
         <>
             <div className={hovered ? "container-logo is-hover" : 
                             "container-logo not-hover"}
                             onMouseEnter={changeHoverState}
-                            onMouseLeave={changeHoverState}>
+                            onMouseLeave={changeHoverState}
+                            onClick={reloadPage}>
 
                 <div className="top-bar"></div>
                 <div className="left-bar"></div>
