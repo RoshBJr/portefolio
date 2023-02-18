@@ -1,11 +1,21 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 import Loading from './Loading';
+import Main from './Main';
 
 function App() {
+  const [loading,setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4500)
+  }, []);
+
   return (
     <div className="App">
-      <Loading/>
+      {loading ? (<Loading/>) : (<Main/>) }
     </div>
   );
 }

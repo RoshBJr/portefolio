@@ -9,7 +9,8 @@
     width: 100%;
     height: 100vh;
     background-color: $Rich_black;
-
+    animation: 500ms 4s forwards loadingFadeOut;
+    
     .hide-gif {
         background-color: $Rich_black;
         border-radius: 30%;
@@ -27,49 +28,53 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        animation: 500ms 3s forwards loadingFadeOut;
+        
         .top-bar, .bottom-bar {
             position: absolute;
             width: 100%;
             background-color: $Air_force_blue;
             height: 10%;
         }
-
+        
         .right-bar, .left-bar {
             position: absolute;
             height: 100%;
             width: 10%;
             background-color: $Air_force_blue;
         }
-
+        
         .right-bar {
             right: 0;
-            animation: 3s infinite ease-in-out verticalAnimRight;
+            animation: 3s infinite ease-in-out verticalAnimRight, 500ms 3s forwards loadingFadeOut;
         }
-
+        
         .left-bar {
             left: 0;
-            animation: 3s infinite ease-in-out verticalAnimLeft;
+            animation: 3s infinite ease-in-out verticalAnimLeft, 500ms 3s forwards loadingFadeOut;
         }
-
+        
         .top-bar {
             transform: translateX(-100%);
             top: 0;
-            animation: 3s infinite ease-in-out horizontalAnimTop;
+            animation: 3s infinite ease-in-out horizontalAnimTop, 500ms 3s forwards loadingFadeOut;
         }
-
+        
         .bottom-bar {
             bottom: 0;
-            animation: 3s infinite ease-in-out horizontalAnimBottom;
+            animation: 3s infinite ease-in-out horizontalAnimBottom, 500ms 3s forwards loadingFadeOut;
         }
-
+        
         .logo {
             font-size: clamp(80px, 12vw, 150px);
             color: $Ash_grey;
         }
     }
 }
-
+@keyframes loadingFadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
 @keyframes horizontalAnimTop {
     0% {transform: translateX(100%);}
