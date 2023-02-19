@@ -1,9 +1,7 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 0 0 0;
+@import './colors/colors.scss';
 
-    .container-logo { margin: 0 0 0 5%; cursor: pointer; }
-    .container-menu { margin: 0 5% 0 0; cursor: pointer;}
+.main {
+    height: inherit;
+    display: flex;
+    flex-flow: column wrap;
 }

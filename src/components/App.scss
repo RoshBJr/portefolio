@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300&display=swap');
 @import './colors/colors.scss';
 
+html {overflow-x: hidden;}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,11 @@
 }
 
 .App {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     min-height: 100vh;
     background-color: $Midnight_green;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 200px 0 0 0;
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.scss';
+import Header from './Header';
 import Loading from './Loading';
 import Main from './Main';
 
@@ -15,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (<Loading/>) : (<Main/>)}
+      {/* {loading ? (<Loading/>) : (<Main/>)} */}
+      <Header/>
+      <Main/>
     </div>
   );
 }

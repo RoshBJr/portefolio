@@ -1,0 +1,29 @@
+@import './colors/colors.scss';
+
+.all-sections {
+    height: inherit;
+
+    .container-presentation {
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10px;
+        align-items: center;
+
+        .titre-projet, .nom, .texte-presentation {
+            width: 80%;
+        }
+
+        .titre-projet {
+            color: $Ash_grey;
+        }
+    
+        .nom {
+            color: $Air_force_blue;
+        }
+    
+        .texte-presentation {
+            color: $Beige;
+        }
+    }
+}
