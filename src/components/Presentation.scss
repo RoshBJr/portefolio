@@ -2,16 +2,21 @@
 
 .all-sections {
     height: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 
     .container-presentation {
         height: auto;
+        width: 80%;
         display: flex;
         flex-flow: column wrap;
         gap: 10px;
-        align-items: center;
+        align-items: flex-start;
 
         .titre-projet, .nom, .texte-presentation {
-            width: 80%;
+            position: relative;
+            width: auto;
         }
 
         .titre-projet {
@@ -23,7 +28,14 @@
         }
     
         .texte-presentation {
+            opacity: 0;
             color: $Beige;
+            animation: fadeIn 1s ease-in 4.5s 1 forwards;
         }
     }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
