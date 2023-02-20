@@ -15,6 +15,7 @@
         align-items: flex-start;
 
         .titre-projet, .nom, .texte-presentation {
+            overflow-x: hidden;
             position: relative;
             width: auto;
         }
