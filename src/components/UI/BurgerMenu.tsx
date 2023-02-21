@@ -22,10 +22,10 @@ export default function BurgerMenu() {
     }
 
     return (
-        <div className="container-menu">
+        <div className="container-menu" >
             <div className={ animBurger ? 'container-lignes clicked': 
                             'container-lignes unclicked'}
-                            onMouseDown={toggleMenu}>
+                            onClick={toggleMenu}>
 
                     <div className="ligne-1"></div>
                     <div className="ligne-2"></div>
