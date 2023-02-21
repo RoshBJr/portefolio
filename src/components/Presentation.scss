@@ -11,7 +11,7 @@
         width: 80%;
         display: flex;
         flex-flow: column wrap;
-        gap: 10px;
+        gap: 1em;
         align-items: flex-start;
 
         .titre-projet, .nom, .texte-presentation {
@@ -26,6 +26,7 @@
     
         .nom {
             color: $Air_force_blue;
+            font-size: clamp(26px, 8vw, 40px);
         }
     
         .texte-presentation {

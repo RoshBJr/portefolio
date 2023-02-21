@@ -1,0 +1,10 @@
+@import './colors/colors.scss';
+
+
+.menu-list {
+    position: absolute;
+    background-color: $Rich_black;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+}

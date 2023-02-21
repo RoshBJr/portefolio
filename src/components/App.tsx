@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './Header';
 import Loading from './Loading';
 import Main from './Main';
+import MenuContainer from './MenuContainer';
 
 function App() {
   const [loading,setLoading] = useState(false);
@@ -16,7 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (<Loading/>) :(<Main/>)}
+      <MenuContainer/>
+      {/* {loading ? (<Loading/>) :(<Main/>)} */}
+      <Main/>
     </div>
   );
 }

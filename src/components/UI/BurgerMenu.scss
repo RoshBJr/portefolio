@@ -30,22 +30,27 @@
 }
 
 .clicked {
+
     .ligne-1{animation: .5s forwards ease-in-out topLine;}
+
     .ligne-2 {
         width: 100px;
         transform: rotate(0deg); 
-        transition: width 500ms, transform .5s;
+        transition: width .5s, transform .5s;
     }
     .ligne-3{animation: .5s forwards ease-in-out bottomLine;}    
 }
 
 .unclicked {
+
     .ligne-1{animation: .5s forwards ease-in-out topLineOut;}
+    
     .ligne-2 {
         transition: width 500ms; 
         width: 10px;
         animation: 3s infinite cubic-bezier(.76,-0.01,.27,1.03) alternate-reverse middleLineIdle;
     }
+
     .ligne-3{animation: .5s forwards ease bottomLineOut;}
 }
 
