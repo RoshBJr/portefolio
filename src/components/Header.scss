@@ -1,6 +1,7 @@
 @import './colors/colors.scss';
 
 .header {
+    z-index: 99;
     position: sticky;
     top: 0;
     left: 0;
@@ -11,6 +12,19 @@
     height: 100px;
     background-color: $Midnight_green;
 
+    
+    .bg-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $Rich_black;
+        transition: width 500ms cubic-bezier(.52,.29,.04,1.01);
+    }    
+    
     .container-logo { margin: 0 0 0 5%; cursor: pointer; }
     .container-menu { margin: 0 5% 0 0; cursor: pointer;}
 }
+
+.menu-in {width: 100% !important;}

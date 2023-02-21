@@ -2,9 +2,15 @@
 
 
 .menu-list {
+    z-index: 98;
     position: absolute;
     background-color: $Rich_black;
+    transform: translateX(100%);
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
+    transition: all 300ms ease-out;
+}
+
+.show-menu {
+    transform: translateX(0%);
 }
