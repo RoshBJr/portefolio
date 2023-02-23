@@ -2,18 +2,20 @@ import '../UI/TextTypingAnim.scss';
 
 interface UiProps {
     bgColor: string;
-    text: string;
+    textLength: number;
     animDelai?:string;
+    duration?: string;
 }
 
-export default function TextTypingAnim({bgColor, text, animDelai}:UiProps) {
+export default function TextTypingAnim({bgColor, textLength, animDelai, duration}:UiProps) {
     
     const styleBg = {backgroundColor: bgColor};
-    const styleSteps = { animationTimingFunction: `steps(${text.length*2.5}, end)`}
+    const animDuration = {animationDuration: `${duration}`};
+    const styleSteps = { animationTimingFunction: `steps(${Math.round(textLength*3)}, end)`}
     const delaiAnim = {animationDelay: `${animDelai}`};
     
     return (
-        <div className="text-cover" style={{...styleBg, ...styleSteps, ...delaiAnim}} ></div>
+        <div className="text-cover" style={{...styleBg, ...styleSteps, ...delaiAnim, ...animDuration}} ></div>
     );
 }
 

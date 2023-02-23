@@ -5,7 +5,7 @@
     height: 100%;
     position: absolute;
     border-left: 3px solid $Midnight_green;
-    animation: 2s 2s forwards typing,
+    animation: forwards typing,
                 .6s infinite alternate-reverse flashing;
 }
 
@@ -21,6 +21,6 @@
     }
 
     50% {
-        border-left: 3px solid $Beige
+        border-left: 3px solid $Beige;
     }
 }

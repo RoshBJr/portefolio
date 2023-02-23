@@ -34,7 +34,7 @@
     .ligne-1{animation: .5s forwards ease-in-out topLine;}
 
     .ligne-2 {
-        width: 100px;
+        width: 100%;
         transform: rotate(0deg); 
         transition: width .5s, transform .5s;
     }
@@ -47,7 +47,7 @@
     
     .ligne-2 {
         transition: width 500ms; 
-        width: 10px;
+        width: 30%;
         animation: 3s infinite cubic-bezier(.76,-0.01,.27,1.03) alternate-reverse middleLineIdle;
     }
 

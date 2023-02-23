@@ -2,6 +2,13 @@
     "section-presentation": {
         "titre-projet": "Mon Portefolio",
         "nom": "Roshan Jr Bussun",
+        "greeting1": "Hello_",
+        "greeting2": "World!_",
         "texte-presentation": "Je suis un étudiant de Techniques d'intégration multimédia. Présentement, je me spécialise en développement de site Web Front-End."
+    },
+    "lien-sociaux": {
+        "github": "https://github.com/RoshBJr",
+        "linkedin": "https://www.linkedin.com/in/roshan-jr-bussun-4151a0250/",
+        "courriel": "roshanjr3@gmail.com"
     }
 }

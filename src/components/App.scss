@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300&display=swap');
 @import './colors/colors.scss';
 
-#root {overflow-x: hidden; box-sizing: border-box;}
+$encode: 'Encode Sans', sans-serif;
+$sourceCode: 'Source Code Pro', monospace;
+
+#root {
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    background-color: $Midnight_green;
+}
 
 h1, h2, h3, h4, p {
     overflow-y: hidden;
     margin: 0;
     padding: 0;
+    font-family: $sourceCode;
+
 }
 
 * {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    font-family: 'Encode Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+    font-family: $sourceCode;
 }
 
 .App {

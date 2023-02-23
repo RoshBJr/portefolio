@@ -1,4 +1,5 @@
 @import './colors/colors.scss';
+@import './App.scss';
 
 .all-sections {
     height: inherit;
@@ -14,27 +15,65 @@
         gap: 1em;
         align-items: flex-start;
 
-        .titre-projet, .nom, .texte-presentation {
+        .titre-projet, .nom, .texte-presentation, .hello, .world {
             overflow-x: hidden;
             position: relative;
-            width: auto;
+            width: fit-content;
         }
 
         .titre-projet {
             font-size: 20px;
             color: $Ash_grey;
         }
-    
+
         .nom {
             color: $Air_force_blue;
-            font-size: clamp(26px, 8vw, 40px);
+            font-size: clamp(25px, 6vw, 40px);
         }
-        
+
+        .salutation-container {
+            display: flex;
+            flex-flow: row wrap;            
+            margin: 5% 0 5% 0;
+
+            .hello {
+                color: $Ash_grey;
+                font-size: 55px;
+            }
+
+            .world {
+                color: $Ash_grey;
+                font-size: 55px;
+            }
+        }
+
         .texte-presentation {
             font-size: clamp(16px, 5vw, 20px);
             opacity: 0;
             color: $Beige;
-            animation: fadeIn 1s ease-in 4.5s 1 forwards;
+            animation: fadeIn 1s ease-in 4s 1 forwards;
+        }
+
+        .envoyer-courriel {
+            cursor: pointer;
+            margin: 15% 0 0 0;
+            align-self: center;
+            border: 2px solid $Ash_grey;
+            border-radius: 4px;
+            padding: 5% 10%;
+            transition: all .5s;
+
+            &:hover, &:visited, &:link, &:active {
+                text-decoration: none;
+            }
+            &:hover {background-color: $Air_force_blue;}
+            
+            .texte {
+                color: $Beige;
+                width: fit-content;
+                font-size: 18px;
+                font-family: $sourceCode;
+            }
         }
     }
 }
