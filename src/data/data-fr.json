@@ -11,11 +11,14 @@
         "titre": "Compétences",
         "section-langages": {
             "titre": "Langages",
-            "lang1": "Javascript",
+            "js": {
+                "titre": "Javascript",
+                "icone": "/home/ror0/Documents/PP/portefolio/src/media/js.svg"
+            },
             "lang2": "Typescript",
             "lang3": "CSS/SASS",
             "lang4": "HTML",
-            "lang5": "c#",
+            "lang5": "C#",
             "lang6": "PHP",
             "lang7": "Kotlin",
             "lang8": "XML",

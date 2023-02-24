@@ -18,7 +18,8 @@ function App() {
   return (
     <div className="App">
       <MenuContainer/>
-      {loading ? (<Loading/>) :(<Main/>)}
+      {/* {loading ? (<Loading/>) :(<Main/>)} */}
+      <Main/>
     </div>
   );
 }
