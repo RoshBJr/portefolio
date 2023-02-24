@@ -6,6 +6,37 @@
         "greeting2": "World!_",
         "texte-presentation": "Je suis un étudiant de Techniques d'intégration multimédia. Présentement, je me spécialise en développement de site Web Front-End."
     },
+
+    "section-competence": {
+        "titre": "Compétences",
+        "section-langages": {
+            "titre": "Langages",
+            "lang1": "Javascript",
+            "lang2": "Typescript",
+            "lang3": "CSS/SASS",
+            "lang4": "HTML",
+            "lang5": "c#",
+            "lang6": "PHP",
+            "lang7": "Kotlin",
+            "lang8": "XML",
+            "lang9": "Git"
+        },
+        "section-frameworks-cms" : {
+            "titre": "Frameworks / CMS",
+            "frameWrk": "React",
+            "Cms": "Wordpress"
+        },
+        "section-logiciels": {
+            "log1": "Android Studio",
+            "log2": "Github",
+            "log3": "Adobe Illustrator",
+            "log4": "Adobe Photoshop",
+            "log5": "Adobe XD",
+            "log6": "Figma",
+            "log7": "Premiere Pro"
+        }
+    },
+
     "lien-sociaux": {
         "github": "https://github.com/RoshBJr",
         "linkedin": "https://www.linkedin.com/in/roshan-jr-bussun-4151a0250/",

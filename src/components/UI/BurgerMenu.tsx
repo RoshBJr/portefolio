@@ -15,8 +15,10 @@ export default function BurgerMenu() {
     if(animBurger) {
         headerBg?.classList.add('menu-in');
         menuDefil?.classList.add('show-menu');
+        document.querySelector('body')?.classList.add('stop-scroll');
     }
     else {
+        document.querySelector('body')?.classList.remove('stop-scroll');
         headerBg?.classList.remove('menu-in');
         menuDefil?.classList.remove('show-menu');
     }

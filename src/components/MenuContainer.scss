@@ -3,7 +3,8 @@
 
 .menu-list {
     z-index: 98;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     background-color: $Rich_black;
     transform: translateX(100%);
     width: 100%;
@@ -12,5 +13,10 @@
 }
 
 .show-menu {
+    overflow: hidden;
     transform: translateX(0%);
+}
+
+.stop-scroll {
+    overflow: hidden;
 }

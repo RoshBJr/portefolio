@@ -8,6 +8,7 @@
     align-items: center;
 
     .container-presentation {
+        margin: 150px 0 25vh 0;
         height: auto;
         width: 80%;
         display: flex;
@@ -55,6 +56,7 @@
         }
 
         .envoyer-courriel {
+            opacity: 0;
             cursor: pointer;
             margin: 15% 0 0 0;
             align-self: center;
@@ -62,6 +64,7 @@
             border-radius: 4px;
             padding: 5% 10%;
             transition: all .5s;
+            animation: fadeIn 1s ease-in 7s forwards;
 
             &:hover, &:visited, &:link, &:active {
                 text-decoration: none;

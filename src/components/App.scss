@@ -4,6 +4,12 @@
 $encode: 'Encode Sans', sans-serif;
 $sourceCode: 'Source Code Pro', monospace;
 
+html {
+    ::-webkit-scrollbar {display: none;}
+    -ms-overflow-style: none;   // IE and Edge
+    scrollbar-width: none; // firefox
+}
+
 #root {
     overflow-x: hidden; 
     box-sizing: border-box;
