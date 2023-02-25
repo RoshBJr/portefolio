@@ -12,31 +12,71 @@
         "section-langages": {
             "titre": "Langages",
             "js": {
-                "titre": "Javascript",
-                "icone": "/home/ror0/Documents/PP/portefolio/src/media/js.svg"
+                "titre": "Javascript"
             },
-            "lang2": "Typescript",
-            "lang3": "CSS/SASS",
-            "lang4": "HTML",
-            "lang5": "C#",
-            "lang6": "PHP",
-            "lang7": "Kotlin",
-            "lang8": "XML",
-            "lang9": "Git"
+            "ts": {
+                "titre": "Typescript"
+            },
+            "css": {
+                "titre": "CSS"
+            },
+            "sass": {
+                "titre": "SASS"
+            },
+            "html": {
+                "titre": "HTML"
+            },
+            "csharp": {
+                "titre": "C#"
+            },
+            "php": {
+                "titre": "PHP"
+            },
+            "kotlin": {
+                "titre": "Kotlin"
+            },
+            "xml": {
+                "titre": "XML"
+            },
+            "git": {
+                "titre": "Git"
+            }
         },
         "section-frameworks-cms" : {
             "titre": "Frameworks / CMS",
-            "frameWrk": "React",
-            "Cms": "Wordpress"
+            "frameWrk": {
+                "react": {
+                    "titre": "React"
+                }
+            },
+            "Cms": {
+                "wordpress": {
+                    "titre": "Wordpress"
+                }
+            }
         },
         "section-logiciels": {
-            "log1": "Android Studio",
-            "log2": "Github",
-            "log3": "Adobe Illustrator",
-            "log4": "Adobe Photoshop",
-            "log5": "Adobe XD",
-            "log6": "Figma",
-            "log7": "Premiere Pro"
+            "andstudio": {
+                "titre": "Android Studio"
+            },
+            "github": {
+                "titre": "Github"
+            },
+            "ai": {
+                "titre": "Adobe Illustrator"
+            },
+            "ps": {
+                "titre": "Adobe Photoshop"
+            },
+            "xd": {
+                "titre": "Adobe XD"
+            },
+            "figma": {
+                "titre": "Figma"
+            },
+            "pr": {
+                "titre": "Premiere Pro"
+            } 
         }
     },
 

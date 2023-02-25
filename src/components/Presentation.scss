@@ -6,9 +6,10 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    overflow: hidden;
 
     .container-presentation {
-        margin: 150px 0 25vh 0;
+        margin: 125px 0 25vh 0;
         height: auto;
         width: 80%;
         display: flex;

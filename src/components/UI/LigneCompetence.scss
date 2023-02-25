@@ -1,0 +1,20 @@
+@import '../colors/colors.scss';
+
+.container-une-lang {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+
+    .icone {
+        width: clamp(30px, 9vw , 50px);
+        height: clamp(30px, 9vw , 50px);
+    }
+
+    .titre {
+        color: $Ash_grey;
+        padding: 2% 0 0 0;
+        height: auto;
+        font-size: clamp(18px, 5vw , 25px);
+    }
+}

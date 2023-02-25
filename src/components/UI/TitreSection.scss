@@ -4,6 +4,7 @@
     width: 100%;
     
     .titre-section {
+        font-size: clamp(1.5em, 7vw , 2.3em);
         font-weight: bold;
         color: $Ash_grey;
         display: flex;
