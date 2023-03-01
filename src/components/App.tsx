@@ -18,8 +18,7 @@ function App() {
   return (
     <div className="App">
       <MenuContainer/>
-      {/* {loading ? (<Loading/>) :(<Main/>)} */}
-      <Main/>
+      {loading ? (<Loading/>) :(<Main/>)}
     </div>
   );
 }
