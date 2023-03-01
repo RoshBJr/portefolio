@@ -1,24 +1,6 @@
-@import './colors/colors.scss';
-
 .container-competence {
     display: flex;
     flex-flow: column nowrap;
     gap: 3em;
     width: 85%;
-    
-    
-    .boite-langages {
-        border-radius: 4px;
-        padding: 3% 0 3% 5%;
-        width: 100%;
-        background-color: $Air_force_blue;
-        display: flex;
-        flex-flow: column wrap;
-        gap: 1.5em;
-        
-        .boite-titre {
-            font-size: clamp(1.5em, 8vw , 2.3em);
-            color: $Midnight_green;
-        }
-    }
 }

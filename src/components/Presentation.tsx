@@ -44,11 +44,11 @@ export default function Presentation({titre, nom, texte, richBlack, airForceBlue
             </h1>
             <div className="salutation-container">
                 <h2 className="hello">
-                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting1.length} animDelai={'5s'} duration={'1s'}/>
+                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting1.length} animDelai={'5s'} duration={'.5s'}/>
                     {greeting1}
                 </h2>
                 <h2 className="world">
-                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting2.length} animDelai={'6s'} duration={'1s'}/>
+                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting2.length} animDelai={'5.5s'} duration={'.5s'}/>
                     {greeting2}
                 </h2>
             </div>
