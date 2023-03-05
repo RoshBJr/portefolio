@@ -2,6 +2,7 @@ import Competence from './Competence';
 import Header from './Header';
 import './Main.scss';
 import Presentation from './Presentation';
+import Projet from './Projet';
 
 export default function Main() {
 
@@ -12,6 +13,7 @@ export default function Main() {
             <section className="all-sections">
                 <Presentation/>
                 <Competence/>
+                <Projet/>
             </section>
         </div>
         </>

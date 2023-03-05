@@ -1,0 +1,82 @@
+@import '../colors/colors.scss';
+
+.boite-projet {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+
+    .container-info {
+        position: relative;
+        z-index: 20;
+        padding: 8% 0 3% 5%;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1.5em;
+        background-color: $Air_force_blue_flou;
+        width: 100%;
+        height: auto;
+        
+        .titre {
+            color: $Midnight_green_flou;
+            font-size: clamp(1.5em, 7vw, 35px);
+        }
+        
+        .desc {
+            font-size: clamp(10px, 5vw, 20px);
+            color: $Beige;
+            
+        }
+        
+        .logiciels {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 15px;
+            
+            .sous-titre {
+                font-size: clamp(1.17em, 6vw, 25px);
+                color: $Midnight_green;
+                width: 100%;
+            }
+
+            .logo {
+                margin: 0;
+                padding: 0;
+                width: 30px;
+                height: 30px;
+            }
+
+        }
+        .lien {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 15px;
+            padding: 0 5% 0 0;
+            justify-content: flex-end;
+
+            .logo {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+
+                svg {transition: all .5s;}
+
+                &:hover svg {
+                    fill: $Ash_grey;
+                }
+            }
+        }
+    }
+    
+    img {
+        position: absolute;
+        z-index: 19;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        width: 200%;
+        transform: translateX(-25%);
+    }
+}

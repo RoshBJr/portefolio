@@ -1,6 +1,14 @@
 .container-competence {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     gap: 3em;
     width: 85%;
+
+    #compétences {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        transform: translateY(-100%);
+    }
 }

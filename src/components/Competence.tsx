@@ -10,6 +10,7 @@ export default function Competence() {
 
     return (
         <div className="container-competence">
+            <div id='compétences' ></div>
             <TitreSection titre={data['section-competence'].titre} />
             <BoiteLangage/>
             <BoiteLogiciels/>
