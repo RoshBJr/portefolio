@@ -5,6 +5,7 @@ $encode: 'Encode Sans', sans-serif;
 $sourceCode: 'Source Code Pro', monospace;
 
 html {
+    scroll-behavior: smooth;
     ::-webkit-scrollbar {display: none;}
     -ms-overflow-style: none;   // IE and Edge
     scrollbar-width: none; // firefox

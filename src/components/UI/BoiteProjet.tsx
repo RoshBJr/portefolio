@@ -1,7 +1,6 @@
 import './BoiteProjet.scss';
 import data from '../../data/data-fr.json';
 import * as Icons from "../UI/Icons";
-import { Icon } from '@mui/material';
 
 export default function BoiteProjet() {
 

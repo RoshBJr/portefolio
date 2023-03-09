@@ -1,6 +1,7 @@
 {
     "section-presentation": {
-        "titre-projet": "Mon Portefolio",
+        "titre": "Présentation",
+        "titre-projet": "Mon Portfolio",
         "nom": "Roshan Jr Bussun",
         "greeting1": "Hello_",
         "greeting2": "World!_",
@@ -110,6 +111,10 @@
             "liengithub": "",
             "lienprojet": ""
         }
+    },
+
+    "contact": {
+        "droit": "Réalisé par Roshan Jr Bussun"
     },
 
     "lien-sociaux": {

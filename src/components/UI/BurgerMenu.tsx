@@ -2,16 +2,20 @@ import React, {DOMElement, useState} from 'react';
 import { JsxElement } from 'typescript';
 import '../UI/BurgerMenu.scss';
 
-export default function BurgerMenu() {
+interface UIProps {
+    animBurger: boolean;
+    setAnimBurger: Function;
+}
 
-    const [animBurger, setBurgerState] = useState(false);
-
-    const toggleMenu = () => setBurgerState(!animBurger);
+export default function BurgerMenu({animBurger, setAnimBurger}:UIProps) {
 
     // menu defile
     const menuDefil = document.querySelector('.menu-list');
     // header
     const headerBg = document.querySelector('.bg-menu');
+
+    const toggleMenu = () => setAnimBurger(!animBurger);
+
     if(animBurger) {
         headerBg?.classList.add('menu-in');
         menuDefil?.classList.add('show-menu');

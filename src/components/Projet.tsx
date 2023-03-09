@@ -7,6 +7,7 @@ export default function Projet() {
 
     return (
         <div className="container-projet">
+            <div id='projets' ></div>
             <TitreSection titre={data['section-projets'].titre} />
             <BoiteProjet/>            
         </div>

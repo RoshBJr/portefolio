@@ -33,6 +33,7 @@ export default function Presentation({titre, nom, texte, richBlack, airForceBlue
 
     return (
         <div className="container-presentation">
+            <div id='présentation' ></div>
             <h3 className="titre-projet">
                 <TextTypingAnim  bgColor={midnightGreen} textLength={titre.length} animDelai={'200ms'} duration={'2s'}/>
                 {titre}

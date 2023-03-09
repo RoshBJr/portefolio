@@ -7,6 +7,7 @@ import MenuContainer from './MenuContainer';
 
 function App() {
   const [loading,setLoading] = useState(false);
+  const [animBurger, setBurgerState] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -17,8 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <MenuContainer/>
-      {loading ? (<Loading/>) :(<Main/>)}
+      <MenuContainer animBurger={animBurger} setAnimBurger={setBurgerState} />
+      {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)}
     </div>
   );
 }
