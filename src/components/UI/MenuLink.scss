@@ -1,7 +1,6 @@
 @import '../colors/colors.scss';
 
 .container-button {
-    pointer-events: none;
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
@@ -10,9 +9,9 @@
     width: fit-content;
     height: 50px;
     overflow: hidden;
-    &:hover > .anim-bar {
-        transform: translateX(0%);
-    }
+    // &:hover > .anim-bar {
+    //     // transform: translateX(0%);
+    // }
     
     .anim-bar {
         position: absolute;

@@ -1,11 +1,23 @@
 @import '../colors/colors.scss';
 
+.boite-projet.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
 .boite-projet {
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 4px;
+    opacity: 0;
+    transform: translateY(50%);
+    visibility: hidden;
+    transition: opacity 1s ease, transform .5s ease;
+    will-change: opacity, visibility;
 
     .container-info {
         position: relative;
@@ -89,4 +101,16 @@
         width: 200%;
         transform: translateX(-25%);
     }
+}
+
+.trigger-anim-projet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    // align-self: flex-start;
+    height: 50%;
+    width: 100%;
+    border: 2px solid black;
 }

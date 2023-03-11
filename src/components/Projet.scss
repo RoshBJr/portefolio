@@ -1,9 +1,20 @@
+.container-projet.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transform: translateY(0);
+}
 .container-projet {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
     gap: 3em;
     width: 85%;
+    opacity: 0;
+    transform: translateY(50%);
+    visibility: hidden;
+    transition: opacity 1s ease, transform 1s ease;
+    will-change: opacity, visibility;
 
     #projets {
         height: 150px;
@@ -12,4 +23,16 @@
         height: 150px;
         transform: translateY(-100%);
     }
+}
+
+.trigger-anim-titre-projet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    // align-self: flex-start;
+    height: 50%;
+    width: 100%;
+    border: 2px solid black;
 }

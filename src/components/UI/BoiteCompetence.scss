@@ -1,5 +1,12 @@
 @import '../colors/colors.scss';
 
+.boite-competence.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
 .boite-competence {
     border-radius: 4px;
     padding: 8% 0 8% 5%;
@@ -8,7 +15,12 @@
     display: flex;
     flex-flow: column wrap;
     gap: 1.5em;
-    
+    opacity: 0;
+    transform: translateY(50%);
+    visibility: hidden;
+    transition: opacity 1s ease, transform .5s ease;
+    will-change: opacity, visibility;
+
     @media screen and (min-width: 576px) and (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr;
@@ -24,3 +36,15 @@
         color: $Midnight_green;
     }
 }
+
+    .trigger-anim-lang, .trigger-anim-fwrk, .trigger-anim-log {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        // align-self: flex-start;
+        height: 50%;
+        width: 100%;
+        border: 2px solid black;
+    }
