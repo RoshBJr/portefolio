@@ -18,6 +18,10 @@
         gap: 1em;
         align-items: flex-start;
 
+        #présentation {
+            transform: translateY(190px);
+        }
+
         .titre-projet, .nom, .texte-presentation, .hello, .world {
             overflow-x: hidden;
             position: relative;

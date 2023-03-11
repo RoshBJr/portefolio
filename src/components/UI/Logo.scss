@@ -5,11 +5,11 @@
 ----------------------------------------------------------------*/
 
 .header .container-logo {
-    width: clamp(50px, 10vw, 80px);
-    height: clamp(50px, 10vw, 80px);
+    width: clamp(40px, 9vw, 50px);
+    height: clamp(40px, 9vw, 50px);
     animation-play-state: paused;
 
-    .logo { font-size: clamp(30px, 9vw, 80px); }
+    .logo { font-size: clamp(30px, 7vw, 40px); }
 }
 .header .not-hover {
     .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }

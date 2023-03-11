@@ -19,7 +19,8 @@ function App() {
   return (
     <div className="App">
       <MenuContainer animBurger={animBurger} setAnimBurger={setBurgerState} />
-      {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)}
+      {/* {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)} */}
+      <Main animBurger={animBurger} setAnimBurger={setBurgerState}/>
     </div>
   );
 }
