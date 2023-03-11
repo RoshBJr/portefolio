@@ -4,25 +4,25 @@
                     LOGO FROM THE HEADER
 ----------------------------------------------------------------*/
 
-.header .container-logo {
+.header .loading-logo {
     width: clamp(40px, 9vw, 50px);
     height: clamp(40px, 9vw, 50px);
-    animation-play-state: paused;
-    opacity: 0;
-    animation: 1s forwards fadeIn ease-in;
-
+    opacity: 1;
+    animation-play-state: paused ;
+    // animation: 1s forwards fadeIn ease-in;
+    
     .logo { font-size: clamp(30px, 7vw, 40px);}
 }
 .header .not-hover {
-    .top-bar { transform: translateX(0%); transition: transform .3s ease;}
-    .bottom-bar { transform: translateX(0%); transition: transform .3s ease;}
-    .left-bar { transform: translateY(0%); transition: transform .3s ease;}
-    .right-bar { transform: translateY(0%); transition: transform .3s ease;}
+    // .top-bar { transform: translateX(0%); transition: transform .3s ease;}
+    // .bottom-bar { transform: translateX(0%); transition: transform .3s ease;}
+    // .left-bar { transform: translateY(0%); transition: transform .3s ease;}
+    // .right-bar { transform: translateY(0%); transition: transform .3s ease;}
     
-    // .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }
-    // .bottom-bar {animation: 300ms linear forwards animLogoFadeInBottom;}
-    // .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
-    // .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
+    .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }
+    .bottom-bar {animation: 300ms linear forwards animLogoFadeInBottom;}
+    .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
+    .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
 }
 .header .is-hover {
 
@@ -80,7 +80,7 @@
                     LOGO FROM THE LOADING SCREEN
 ----------------------------------------------------------------*/
 
-.container-logo {
+.loading-logo {
     overflow: hidden;
     position: relative;
     width: clamp(120px, 15vw, 200px);
@@ -106,23 +106,23 @@
     
     .right-bar {
         right: 0;
-        // animation: 3s infinite ease-in-out verticalAnimRight, 500ms 3s forwards loadingFadeOut;
+        animation: 3s infinite ease-in-out verticalAnimRight, 500ms 3s  loadingFadeOut;
     }
     
     .left-bar {
         left: 0;
-        // animation: 3s infinite ease-in-out verticalAnimLeft, 500ms 3s forwards loadingFadeOut;
+        animation: 3s infinite ease-in-out verticalAnimLeft, 500ms 3s  loadingFadeOut;
     }
     
     .top-bar {
         transform: translateX(-100%);
         top: 0;
-        // animation: 3s infinite ease-in-out horizontalAnimTop, 500ms 3s forwards loadingFadeOut;
+        animation: 3s infinite ease-in-out horizontalAnimTop, 500ms 3s  loadingFadeOut;
     }
     
     .bottom-bar {
         bottom: 0;
-        // animation: 3s infinite ease-in-out horizontalAnimBottom, 500ms 3s forwards loadingFadeOut;
+        animation: 3s infinite ease-in-out horizontalAnimBottom, 500ms 3s  loadingFadeOut;
     }
     
     .logo {
