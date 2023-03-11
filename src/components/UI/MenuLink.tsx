@@ -14,7 +14,8 @@ export default function MenuLink({text, barColor, linkSection, animBurger, setAn
 
     return (
         <a href={linkSection} className="container-button" onClick={closeMenu} >
-            <div className="anim-bar" style={{borderColor: barColor} }></div>
+            <div className="anim-bar" ></div>
+            <div className="anim-bar-2"></div>
             <h2 className="text-placeholder">{text}</h2>
         </a>
     );

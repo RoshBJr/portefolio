@@ -12,13 +12,10 @@
     transition: all 300ms ease-out;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    padding: 130px 0 0 0;
+    justify-content: flex-start;
+    align-items: flex-end;
     gap: 20px;
-
-    .container-button .anim-bar {
-        display: none;
-    }
 }
 
 .show-menu {

@@ -18,8 +18,12 @@
         gap: 1em;
         align-items: flex-start;
 
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            margin-top: 75px;
+        }
+
         #présentation {
-            transform: translateY(190px);
+            transform: translateY(-190px);
         }
 
         .titre-projet, .nom, .texte-presentation, .hello, .world {
@@ -31,11 +35,19 @@
         .titre-projet {
             font-size: 20px;
             color: $Ash_grey;
+
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                font-size: 30px;
+            }
         }
 
         .nom {
             color: $Air_force_blue;
             font-size: clamp(25px, 6vw, 40px);
+
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                font-size: clamp(40px, 7vw, 50px);
+            }
         }
 
         .salutation-container {
@@ -43,14 +55,26 @@
             flex-flow: row wrap;            
             margin: 5% 0 5% 0;
 
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                margin-top: 2%;
+            }
+
             .hello {
                 color: $Ash_grey;
                 font-size: 55px;
+
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    font-size: clamp(55px, 8vw, 66px);
+                }
             }
 
             .world {
                 color: $Ash_grey;
                 font-size: 55px;
+                
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    font-size: clamp(55px, 8vw, 66px);
+                }
             }
         }
 
@@ -59,12 +83,21 @@
             opacity: 0;
             color: $Beige;
             animation: fadeIn 1s ease-in 4s 1 forwards;
+
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                font-size: 22px;
+            }
         }
 
         .envoyer-courriel {
             opacity: 0;
             cursor: pointer;
             margin: 15% 0 0 0;
+
+            @media screen and (min-width: 576px) and (max-width: 768px) {
+                margin-top: 8%;
+            }
+
             align-self: center;
             border: 2px solid $Ash_grey;
             border-radius: 4px;
@@ -82,6 +115,10 @@
                 width: fit-content;
                 font-size: 18px;
                 font-family: $sourceCode;
+
+                @media screen and (min-width: 576px) and (max-width: 768px) {
+                    font-size: 22px;
+                }
             }
         }
     }

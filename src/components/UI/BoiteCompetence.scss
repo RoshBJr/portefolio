@@ -11,7 +11,12 @@
     
     @media screen and (min-width: 576px) and (max-width: 768px) {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        .container-ligne {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
     
     .boite-titre {

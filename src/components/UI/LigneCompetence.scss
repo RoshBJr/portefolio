@@ -1,20 +1,32 @@
 @import '../colors/colors.scss';
 
-.container-une-lang {
+
+.container-ligne {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 10px;
+    flex-flow: column wrap;
+    gap: 20px;
 
-    .icone {
-        width: clamp(30px, 9vw , 50px);
-        height: clamp(30px, 9vw , 50px);
-    }
+    .container-une-lang {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 10px;
+        
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            flex-flow: column wrap;
+            align-items: flex-start;
+        }
 
-    .titre {
-        color: $Ash_grey;
-        padding: 1% 0 0 0;
-        height: auto;
-        font-size: clamp(18px, 5vw , 25px);
+        .icone {
+            width: clamp(30px, 9vw , 50px);
+            height: clamp(30px, 9vw , 50px);
+        }
+    
+        .titre {
+            color: $Ash_grey;
+            padding: 1% 0 0 0;
+            height: auto;
+            font-size: clamp(18px, 5vw , 25px);
+        }
     }
 }
