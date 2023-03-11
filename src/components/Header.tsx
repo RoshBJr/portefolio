@@ -14,7 +14,7 @@ export default function Header({animBurger, setAnimBurger}:UIProps) {
     return (
         <header className="header">
             <div className="bg-menu"></div>
-            <HeaderLogo/>
+            <Logo/>
             <NavDesktop/>
             <BurgerMenu animBurger={animBurger} setAnimBurger={setAnimBurger} />
         </header>

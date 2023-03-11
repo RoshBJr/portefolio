@@ -10,7 +10,14 @@ interface UiProps {
 
 export default function MenuLink({text, barColor, linkSection, animBurger, setAnimBurger}:UiProps) {
 
-    const closeMenu = () => setAnimBurger?(!animBurger): null;
+    const closeMenu = () => 
+    {
+        if(setAnimBurger != null) {
+            setAnimBurger(!animBurger);
+        } else {
+            return null;
+        }
+    }
 
     return (
         <a href={linkSection} className="container-button" onClick={closeMenu} >

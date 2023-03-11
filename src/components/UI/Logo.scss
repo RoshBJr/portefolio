@@ -4,7 +4,7 @@
                     LOGO FROM THE HEADER
 ----------------------------------------------------------------*/
 
-.header .loading-logo {
+.header .container-logo {
     width: clamp(40px, 9vw, 50px);
     height: clamp(40px, 9vw, 50px);
     opacity: 1;
@@ -80,7 +80,7 @@
                     LOGO FROM THE LOADING SCREEN
 ----------------------------------------------------------------*/
 
-.loading-logo {
+.container-logo {
     overflow: hidden;
     position: relative;
     width: clamp(120px, 15vw, 200px);
