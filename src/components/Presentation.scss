@@ -21,6 +21,7 @@
         @media screen and (min-width: 576px) and (max-width: 768px) {
             margin-top: 75px;
         }
+        @media (min-width: 768px) { margin-top: 75px; }
 
         #présentation {
             transform: translateY(-190px);
@@ -94,8 +95,11 @@
             cursor: pointer;
             margin: 15% 0 0 0;
 
-            @media screen and (min-width: 576px) and (max-width: 768px) {
+            @media screen and (min-width: 576px) and (max-width: 768px) {margin-top: 8%;}
+            @media (min-width: 769px) { 
                 margin-top: 8%;
+                align-self: flex-start;
+                padding: 3% 5%; 
             }
 
             align-self: center;

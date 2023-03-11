@@ -1,6 +1,7 @@
 import './Header.scss';
 import BurgerMenu from './UI/BurgerMenu';
 import Logo from './UI/Logo';
+import NavDesktop from './UI/NavDesktop';
 
 interface UIProps {
     animBurger: boolean;
@@ -13,6 +14,7 @@ export default function Header({animBurger, setAnimBurger}:UIProps) {
         <header className="header">
             <div className="bg-menu"></div>
             <Logo/>
+            <NavDesktop/>
             <BurgerMenu animBurger={animBurger} setAnimBurger={setAnimBurger} />
         </header>
     );

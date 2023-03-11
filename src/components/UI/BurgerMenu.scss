@@ -5,6 +5,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    @media (min-width: 769px) { display: none; }
     
     .container-lignes {
         display: flex;

@@ -1,0 +1,29 @@
+@import '../App.scss';
+@import'../colors/colors.scss';
+
+.container-links {
+    display: none;
+}
+
+@media (min-width: 769px) { 
+    .container-links {
+        opacity: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        animation: 1s forwards ease-in fadeIn;
+
+        .container-button {
+
+            .text-placeholder {
+                color: $Ash_grey;
+                font-size: 18px;
+                font-family: $sourceCode;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

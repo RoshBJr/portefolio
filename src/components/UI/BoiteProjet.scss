@@ -12,6 +12,10 @@
     width: 100%;
     height: auto;
     overflow: hidden;
+    @media (min-width: 769px) { 
+        overflow: visible;
+        margin: 0 0 10% 0;
+    }
     border-radius: 4px;
     opacity: 0;
     transform: translateY(50%);
@@ -24,9 +28,16 @@
         z-index: 20;
         padding: 8% 0 3% 5%;
 
-        @media screen and (min-width: 576px) and (max-width: 768px) {
+        @media screen and (min-width: 576px) {
             padding: 8% 0 8% 5%;
         }
+        
+        @media (min-width: 769px) { 
+            position: absolute;
+            transform: translate(-10%, 60%);
+            padding: 8% 0 2% 5%;
+            border-radius: 4px;
+         }
 
         display: flex;
         flex-flow: column wrap;
@@ -38,11 +49,19 @@
         .titre {
             color: $Midnight_green_flou;
             font-size: clamp(1.5em, 7vw, 35px);
+            @media (min-width: 769px) {
+                text-align: right;
+                padding: 0 5% 0 0;
+            }
         }
         
         .desc {
             font-size: clamp(10px, 5vw, 20px);
             color: $Beige;
+            @media (min-width: 769px) {
+                text-align: end;
+                padding: 0 5% 0 0;
+            }
             
         }
         
@@ -51,11 +70,18 @@
             display: flex;
             flex-flow: row wrap;
             gap: 15px;
+            @media (min-width: 769px) {
+                justify-content: end;
+                padding: 0 5% 0 0;
+            }
             
             .sous-titre {
                 font-size: clamp(1.17em, 6vw, 25px);
                 color: $Midnight_green;
                 width: 100%;
+                @media (min-width: 769px) {
+                    text-align: end;
+                }
             }
 
             .logo {
@@ -77,6 +103,10 @@
             gap: 15px;
             padding: 0 5% 0 0;
             justify-content: flex-end;
+
+            @media (min-width: 769px) {
+                transform: translateY(25%);
+            }
 
             .logo {
                 cursor: pointer;
@@ -100,6 +130,13 @@
         height: 100%;
         width: 200%;
         transform: translateX(-25%);
+        
+        @media (min-width: 769px) {
+            position: inherit;
+            transform: translate(10px, 10px);
+            height: auto;
+            width: 100%;
+         }
     }
 }
 
