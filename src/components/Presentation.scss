@@ -23,8 +23,12 @@
         }
         @media (min-width: 768px) { margin-top: 75px; }
 
+        @media (min-width: 992px) {
+            margin: 175px 0 25vh 0;
+        }
+
         #présentation {
-            transform: translateY(-190px);
+            transform: translateY(-400px);
         }
 
         .titre-projet, .nom, .texte-presentation, .hello, .world {
@@ -37,7 +41,7 @@
             font-size: 20px;
             color: $Ash_grey;
 
-            @media screen and (min-width: 576px) and (max-width: 768px) {
+            @media screen and (min-width: 576px) {
                 font-size: 30px;
             }
         }
@@ -56,8 +60,8 @@
             flex-flow: row wrap;            
             margin: 5% 0 5% 0;
 
-            @media screen and (min-width: 576px) and (max-width: 768px) {
-                margin-top: 2%;
+            @media screen and (min-width: 576px) {
+                margin: 2% 0 2% 0;
             }
 
             .hello {
@@ -67,6 +71,7 @@
                 @media screen and (min-width: 576px) and (max-width: 768px) {
                     font-size: clamp(55px, 8vw, 66px);
                 }
+                @media (min-width: 992px) { font-size: 77px; }
             }
 
             .world {
@@ -76,6 +81,8 @@
                 @media screen and (min-width: 576px) and (max-width: 768px) {
                     font-size: clamp(55px, 8vw, 66px);
                 }
+
+                @media (min-width: 992px) { font-size: 77px; }
             }
         }
 
@@ -88,6 +95,7 @@
             @media screen and (min-width: 576px) and (max-width: 768px) {
                 font-size: 22px;
             }
+            @media (min-width: 992px) { font-size: 25px; }
         }
 
         .envoyer-courriel {

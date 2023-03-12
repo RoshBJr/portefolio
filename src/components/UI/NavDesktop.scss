@@ -18,6 +18,8 @@
                 color: $Ash_grey;
                 font-size: 18px;
                 font-family: $sourceCode;
+
+                @media (min-width: 992px) { font-size: 20px;}
             }
         }
     }

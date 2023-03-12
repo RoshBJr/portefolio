@@ -32,12 +32,20 @@
         }
     }
 
+    
     @media (min-width: 769px) { 
         .container-ligne {
             grid-template-columns: 1fr 1fr 1fr;
         }
-     }
+    }
     
+    @media (min-width: 992px) {
+        padding: 4% 2% 4% 2%;
+        
+        .container-ligne {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
     .boite-titre {
         font-size: clamp(1.5em, 8vw , 2.3em);
         color: $Midnight_green;
