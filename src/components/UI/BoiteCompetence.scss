@@ -46,6 +46,12 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
+
+    @media (min-width: 1400px) {
+        display: flex;
+        justify-content: space-evenly; 
+    }
+
     .boite-titre {
         font-size: clamp(1.5em, 8vw , 2.3em);
         color: $Midnight_green;

@@ -27,6 +27,9 @@
             padding: 1% 0 0 0;
             height: auto;
             font-size: clamp(18px, 5vw , 25px);
+            @media (min-width: 1200px) { 
+                font-size: 23px;
+            }
         }
     }
 }

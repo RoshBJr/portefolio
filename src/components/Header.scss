@@ -12,6 +12,9 @@
     height: 100px;
     background-color: $Midnight_green_flou;
 
+    @media (min-width: 1400px) { 
+        height: 80px;
+    }
     
     .bg-menu {
         pointer-events: none;
@@ -24,7 +27,12 @@
         transition: width 500ms cubic-bezier(.52,.29,.04,1.01);
     }    
     
-    .container-logo { margin: 0 0 0 5%; cursor: pointer; }
+    .container-logo { 
+        margin: 0 0 0 5%; cursor: pointer;
+        @media (min-width: 1400px) { 
+            margin: 0 0 0 3%;
+        } 
+    }
     .container-menu { margin: 0 5% 0 0; cursor: pointer;}
 }
 
