@@ -8,9 +8,11 @@ interface UIProps {
     desc: string;
     logos: any[];
     img: string;
+    projectSrc: string;
+    projectBuild:string;
 }
 
-export default function BoiteProjet({titre, desc, logos, img}:UIProps) {
+export default function BoiteProjet({titre, desc, logos, img, projectSrc, projectBuild}:UIProps) {
 
     const [isVisible, setVisible] = useState(false);
 
@@ -39,8 +41,8 @@ export default function BoiteProjet({titre, desc, logos, img}:UIProps) {
                     {logos.map( logo => <div className="logo">{logo}</div>)}
                 </div>
                 <div className="lien">
-                    <a className="logo github">{<Icons.GitHubIcon/>}</a>
-                    <a className=" logo projet">{<Icons.BuildIcon/>}</a>
+                    <a href={projectSrc} target='_blank' className="logo github">{<Icons.GitHubIcon/>}</a>
+                    <a href={projectBuild} target='_blank' className=" logo projet">{<Icons.BuildIcon/>}</a>
                 </div>
             </div>
             <img src={require(`../media/${img}.png`)} alt="" />

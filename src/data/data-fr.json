@@ -88,22 +88,22 @@
             "titre": "Les Fragments Oubliés",
             "desc": "Dans la réalisation de ce projet j'ai eu l'opportunité de travailler sur le système de combat tour par tour à l'aide de Unity et C#.",
             "img":"lfo",
-            "liengithub": "",
-            "lienprojet": ""
+            "liengithub": "https://github.com/RoshBJr/projetLFO",
+            "lienprojet": "https://github.com/RoshBJr/projetLFO/tree/main/ProjetJeuE6/jeuBuild"
         },
         "projet2": {
             "titre": "Calculatrice simple",
             "desc": "Ceci est un projet réalisé avec Android Studio et Kotlin, l'application vous permet d'additionner, soustraire, diviser et mulitiplier.",
             "img": "kotlinMobile",
-            "liengithub": "",
-            "lienprojet": ""
+            "liengithub": "https://github.com/RoshBJr/KotlinSimpleCalculator",
+            "lienprojet": "https://github.com/RoshBJr/KotlinSimpleCalculator/tree/app-build"
         },
         "projet3": {
             "titre": "Quiz sur les drapeaux",
             "desc": "Ceci est un projet réalisé avec Android Studio et Kotlin, l'application vous permet de choisir une réponse parmi une multitude de choix de réponse. Lorsque vous répondez à toutes les questions, vous obtenez votre note et un message.",
             "img": "kotlinMobile",
-            "liengithub": "",
-            "lienprojet": ""
+            "liengithub": "https://github.com/RoshBJr/KotlinQuizApp/tree/main",
+            "lienprojet": "https://github.com/RoshBJr/KotlinQuizApp/tree/app-build"
         }
     },
 

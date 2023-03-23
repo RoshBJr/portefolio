@@ -32,6 +32,8 @@ export default function Projet() {
               desc={data['section-projets'].projet1.desc}
               logos={[<Icons.CSharpIcon/>, <Icons.UnityIcon/>]}
               img={data['section-projets'].projet1.img}
+              projectSrc={data['section-projets'].projet1.liengithub}
+              projectBuild={data['section-projets'].projet1.lienprojet}
             />
 
             <BoiteProjet
@@ -39,6 +41,8 @@ export default function Projet() {
               desc={data['section-projets'].projet2.desc}
               logos={[<Icons.AndStudioIcon/>, <Icons.KotlinIcon/>, <Icons.XmlIcon/>]}
               img={data['section-projets'].projet2.img}
+              projectSrc={data['section-projets'].projet2.liengithub}
+              projectBuild={data['section-projets'].projet2.lienprojet}
             />
 
             <BoiteProjet
@@ -46,6 +50,8 @@ export default function Projet() {
               desc={data['section-projets'].projet3.desc}
               logos={[<Icons.AndStudioIcon/>, <Icons.KotlinIcon/>, <Icons.XmlIcon/>]}
               img={data['section-projets'].projet3.img}
+              projectSrc={data['section-projets'].projet3.liengithub}
+              projectBuild={data['section-projets'].projet3.lienprojet}
             />
             <div ref={domRef} className="trigger-anim-titre-projet"></div>            
         </div>
