@@ -4,7 +4,9 @@
     flex-flow: column nowrap;
     gap: 3em;
     width: 85%;
-
+    @media (min-width: 769px) {
+        gap: 14em;
+    }
     #projets {
         height: 150px;
         position: absolute;

@@ -87,27 +87,21 @@
         "projet1": {
             "titre": "Les Fragments Oubliés",
             "desc": "Dans la réalisation de ce projet j'ai eu l'opportunité de travailler sur le système de combat tour par tour à l'aide de Unity et C#.",
-            "unity": "unityIcon",
-            "csharp": "csharpIcon",
-            "img":"",
+            "img":"lfo",
             "liengithub": "",
             "lienprojet": ""
         },
         "projet2": {
             "titre": "Calculatrice simple",
             "desc": "Ceci est un projet réalisé avec Android Studio et Kotlin, l'application vous permet d'additionner, soustraire, diviser et mulitiplier.",
-            "kotlin": "KotlinIcon",
-            "andstudio": "AndStudioIcon",
-            "img": "",
+            "img": "kotlinMobile",
             "liengithub": "",
             "lienprojet": ""
         },
         "projet3": {
             "titre": "Quiz sur les drapeaux",
             "desc": "Ceci est un projet réalisé avec Android Studio et Kotlin, l'application vous permet de choisir une réponse parmi une multitude de choix de réponse. Lorsque vous répondez à toutes les questions, vous obtenez votre note et un message.",
-            "kotlin": "KotlinIcon",
-            "andstudio": "AndStudioIcon",
-            "img": "",
+            "img": "kotlinMobile",
             "liengithub": "",
             "lienprojet": ""
         }
