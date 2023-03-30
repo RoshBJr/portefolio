@@ -4,6 +4,7 @@ import data from '../data/data-fr.json';
 import TitreSection from './UI/TitreSection';
 import * as Icons from "./UI/Icons";
 import { useRef, useState, useEffect } from 'react';
+import { Icon } from '@mui/material';
 
 export default function Projet() {
 
@@ -52,6 +53,14 @@ export default function Projet() {
               img={data['section-projets'].projet3.img}
               projectSrc={data['section-projets'].projet3.liengithub}
               projectBuild={data['section-projets'].projet3.lienprojet}
+            />            
+            <BoiteProjet
+              titre={data['section-projets'].projet4.titre}
+              desc={data['section-projets'].projet4.desc}
+              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.TsIcon/>]}
+              img={data['section-projets'].projet4.img}
+              projectSrc={data['section-projets'].projet4.liengithub}
+              projectBuild={data['section-projets'].projet4.lienprojet}
             />
             <div ref={domRef} className="trigger-anim-titre-projet"></div>            
         </div>

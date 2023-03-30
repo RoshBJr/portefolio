@@ -104,6 +104,13 @@
             "img": "kotlinMobile",
             "liengithub": "https://github.com/RoshBJr/KotlinQuizApp/tree/main",
             "lienprojet": "https://github.com/RoshBJr/KotlinQuizApp/tree/app-build"
+        },
+        "projet4": {
+            "titre": "AnimeLog",
+            "desc": "Ceci est un projet réalisé avec Typescript HTML5 SCSS et react, l'application web  vous permet de garder un suivi de vos séries d'animations préférées parmi une liste.",
+            "img": "animelog",
+            "liengithub": "https://github.com/RoshBJr/animelog",
+            "lienprojet": "https://roshbjr.github.io/animelog/"
         }
     },
 
