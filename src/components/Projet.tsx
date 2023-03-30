@@ -36,7 +36,6 @@ export default function Projet() {
               projectSrc={data['section-projets'].projet1.liengithub}
               projectBuild={data['section-projets'].projet1.lienprojet}
             />
-
             <BoiteProjet
               titre={data['section-projets'].projet2.titre}
               desc={data['section-projets'].projet2.desc}

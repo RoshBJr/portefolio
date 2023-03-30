@@ -31,7 +31,6 @@ export default function BoiteProjet({titre, desc, logos, img, projectSrc, projec
 
     return (
         <div className={`boite-projet ${ isVisible ? 'is-visible': ''}`}>
-            
             <div className="container-info">
                 <h2 className="titre">{titre}</h2>
                 <p className="desc">{desc}</p>
@@ -46,7 +45,7 @@ export default function BoiteProjet({titre, desc, logos, img, projectSrc, projec
                 </div>
             </div>
             <img src={require(`../media/${img}.png`)} alt="" />
-            <div ref={domRef} className="trigger-anim-fwrk"></div>
+            <div ref={domRef} className="trigger-anim-projet"></div>
         </div>
     );
 }

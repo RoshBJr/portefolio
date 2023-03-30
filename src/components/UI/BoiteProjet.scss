@@ -23,6 +23,10 @@
     transition: opacity 1s ease, transform .5s ease;
     will-change: opacity, visibility;
 
+    .espace {
+        height: 30px;
+    }
+
     .container-info {
         position: relative;
         z-index: 20;
@@ -34,19 +38,19 @@
         
         @media (min-width: 769px) { 
             position: absolute;
-            transform: translate(0 , 55%);
+            // transform: translate(0 , 55%);
             padding: 2% 0 2% 5%;
             border-radius: 4px;
-            width: 70%;
+            width: 60%;
             height: auto;
          }
 
          @media (min-width: 1200px) { 
-            transform: translateY(60%);
+            // transform: translateY(60%);
         }
 
         @media (min-width: 1400px) {
-            transform: translateY(85%);
+            // transform: translateY(85%);
         }
 
         display: flex;
@@ -157,18 +161,19 @@
         height: 100%;
         width: 200%;
         transform: translateX(-25%);
-        
+    
         @media (min-width: 769px) {
             position: inherit;
-            transform: translate(43%, 0);
+            transform: translate(43%, 20%);
             height: auto;
             width: 70%;
             border-radius: 4px;
+            // margin-bottom: 10%;
          }
 
          @media (min-width: 1400px) { 
             width: 60%;
-            transform: translateX(66%);
+            transform: translate(66%, 20%);
         }
     }
 }
