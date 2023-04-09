@@ -111,6 +111,14 @@
             "img": "animelog",
             "liengithub": "https://github.com/RoshBJr/animelog",
             "lienprojet": "https://roshbjr.github.io/animelog/"
+        },
+
+        "projet5": {
+            "titre": "Signets beta",
+            "desc": "Ceci est un projet réalisé avec Javascript, HTML5, SCSS, firebase et react, l'application web  vous permet d'ajouter des signets avec une image, couleur et titre personalisé et le tout sauvegardé dans une base de donnée firestore.",
+            "img": "signets",
+            "liengithub": "https://github.com/RoshBJr/signets",
+            "lienprojet": "https://signets-roshb.web.app/"
         }
     },
 

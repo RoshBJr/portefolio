@@ -28,6 +28,25 @@ export default function Projet() {
         <div className={`container-projet ${ isVisible ? 'is-visible': ''}`}>
             <div id='projets' ></div>
             <TitreSection titre={data['section-projets'].titre} />
+
+            <BoiteProjet
+              titre={data['section-projets'].projet4.titre}
+              desc={data['section-projets'].projet4.desc}
+              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.TsIcon/>]}
+              img={data['section-projets'].projet4.img}
+              projectSrc={data['section-projets'].projet4.liengithub}
+              projectBuild={data['section-projets'].projet4.lienprojet}
+            />
+
+            <BoiteProjet
+              titre={data['section-projets'].projet5.titre}
+              desc={data['section-projets'].projet5.desc}
+              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.JsIcon/>, <Icons.FbIcon/>]}
+              img={data['section-projets'].projet5.img}
+              projectSrc={data['section-projets'].projet5.liengithub}
+              projectBuild={data['section-projets'].projet5.lienprojet}
+            />
+
             <BoiteProjet
               titre={data['section-projets'].projet1.titre}
               desc={data['section-projets'].projet1.desc}
@@ -52,15 +71,8 @@ export default function Projet() {
               img={data['section-projets'].projet3.img}
               projectSrc={data['section-projets'].projet3.liengithub}
               projectBuild={data['section-projets'].projet3.lienprojet}
-            />            
-            <BoiteProjet
-              titre={data['section-projets'].projet4.titre}
-              desc={data['section-projets'].projet4.desc}
-              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.TsIcon/>]}
-              img={data['section-projets'].projet4.img}
-              projectSrc={data['section-projets'].projet4.liengithub}
-              projectBuild={data['section-projets'].projet4.lienprojet}
             />
+
             <div ref={domRef} className="trigger-anim-titre-projet"></div>            
         </div>
     );
