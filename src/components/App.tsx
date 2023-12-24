@@ -4,12 +4,14 @@ import Header from './Header';
 import Loading from './Loading';
 import Main from './Main';
 import MenuContainer from './MenuContainer';
+import doIt from '../code/typing-effect';
 
 function App() {
   const [loading,setLoading] = useState(false);
   const [animBurger, setBurgerState] = useState(false);
 
   useEffect(() => {
+    doIt();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -18,9 +20,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="pattern"></div>
       <MenuContainer animBurger={animBurger} setAnimBurger={setBurgerState} />
-      {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)}
-      {/* <Main animBurger={animBurger} setAnimBurger={setBurgerState}/> */}
+      {/* {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)} */}
+      <Main animBurger={animBurger} setAnimBurger={setBurgerState}/>
     </div>
   );
 }

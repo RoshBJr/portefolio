@@ -9,13 +9,16 @@ interface UiProps {
 
 export default function TextTypingAnim({bgColor, textLength, animDelai, duration}:UiProps) {
     
-    const styleBg = {backgroundColor: bgColor};
+    // const styleBg = {backgroundColor: bgColor};
     const animDuration = {animationDuration: `${duration}`};
     const styleSteps = { animationTimingFunction: `steps(${Math.round(textLength*3)}, end)`}
     const delaiAnim = {animationDelay: `${animDelai}`};
     
     return (
-        <div className="text-cover" style={{...styleBg, ...styleSteps, ...delaiAnim, ...animDuration}} ></div>
+        <div className="bg-color">
+            <div className="text-cover" style={{...styleSteps, ...delaiAnim, ...animDuration}} >
+            </div>
+        </div>
     );
 }
 

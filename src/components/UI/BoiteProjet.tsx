@@ -37,7 +37,7 @@ export default function BoiteProjet({titre, desc, logos, img, projectSrc, projec
                 
                 <div className="logiciels">
                     <h3 className="sous-titre">Réalisé avec</h3>
-                    {logos.map( logo => <div className="logo">{logo}</div>)}
+                    {logos.map( logo => <div key={Math.random()} className="logo">{logo}</div>)}
                 </div>
                 <div className="lien">
                     <a href={projectSrc} target='_blank' className="logo github">{<Icons.GitHubIcon/>}</a>
