@@ -47,7 +47,7 @@
         .titre-projet {
             font-size: 20px;
             color: $Ash_grey;
-            border-right: 3px solid $Midnight_green;
+            // border-right: 3px solid $Midnight_green;
             animation: .6s infinite alternate-reverse flashing;
 
 
@@ -61,6 +61,7 @@
         .nom {
             color: $Air_force_blue;
             font-size: clamp(25px, 6vw, 40px);
+            animation: .6s infinite alternate-reverse flashing;
 
             @media screen and (min-width: 576px) and (max-width: 768px) {
                 font-size: clamp(40px, 7vw, 50px);
@@ -79,6 +80,7 @@
             .hello {
                 color: $Ash_grey;
                 font-size: 55px;
+                animation: .6s infinite alternate-reverse flashing;
 
                 @media screen and (min-width: 576px) and (max-width: 768px) {
                     font-size: clamp(55px, 8vw, 66px);
@@ -89,6 +91,7 @@
             .world {
                 color: $Ash_grey;
                 font-size: 55px;
+                animation: .6s infinite alternate-reverse flashing;
                 
                 @media screen and (min-width: 576px) and (max-width: 768px) {
                     font-size: clamp(55px, 8vw, 66px);
@@ -134,7 +137,7 @@
             border-radius: 4px;
             padding: 5% 10%;
             transition: all .5s;
-            animation: fadeIn 1s ease-in 6s forwards;
+            animation: fadeIn 1s ease-in 5s forwards;
 
             &:hover, &:visited, &:link, &:active {
                 text-decoration: none;
@@ -168,4 +171,8 @@
     50% {
         border-right: 3px solid $Beige;
     }
+}
+
+.remove-cursor {
+    animation: none !important;
 }

@@ -40,17 +40,17 @@ export default function Presentation({titre, nom, texte, richBlack, airForceBlue
             </h3>
 
             <h1 className="nom">
-                <TextTypingAnim  bgColor={midnightGreen} textLength={nom.length} animDelai={'2.2s'} duration={'2s'}/>
-                {nom}
+                {/* <TextTypingAnim  bgColor={midnightGreen} textLength={nom.length} animDelai={'2.2s'} duration={'2s'}/>
+                {nom} */}
             </h1>
             <div className="salutation-container">
                 <h2 className="hello">
-                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting1.length} animDelai={'5s'} duration={'.5s'}/>
-                    {greeting1}
+                    {/* <TextTypingAnim bgColor={midnightGreen} textLength={greeting1.length} animDelai={'5s'} duration={'.5s'}/>
+                    {greeting1} */}
                 </h2>
                 <h2 className="world">
-                    <TextTypingAnim bgColor={midnightGreen} textLength={greeting2.length} animDelai={'5.5s'} duration={'.5s'}/>
-                    {greeting2}
+                    {/* <TextTypingAnim bgColor={midnightGreen} textLength={greeting2.length} animDelai={'5.5s'} duration={'.5s'}/>
+                    {greeting2} */}
                 </h2>
             </div>
 
