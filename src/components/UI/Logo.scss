@@ -9,71 +9,84 @@
     height: clamp(40px, 9vw, 50px);
     opacity: 1;
     animation-play-state: paused ;
+    border: 1px solid $Beige;
+    border-radius: 2px;
     // animation: 1s forwards fadeIn ease-in;
     
     .logo { font-size: clamp(30px, 7vw, 40px);}
 }
 .header .not-hover {
-    // .top-bar { transform: translateX(0%); transition: transform .3s ease;}
-    // .bottom-bar { transform: translateX(0%); transition: transform .3s ease;}
+    transition: background-color 0.3s ease-in-out;
+    // .top-bar { transform: translateX(20%); transition: transform .3s ease;}
+    // .bottom-bar { transform: translateX(-20%); transition: transform .3s ease;}
     // .left-bar { transform: translateY(0%); transition: transform .3s ease;}
     // .right-bar { transform: translateY(0%); transition: transform .3s ease;}
+    .left-bar, .right-bar,.top-bar, .bottom-bar{
+        opacity: 0;
+    }
     
     .top-bar {animation: 300ms linear forwards animLogoFadeInTop; }
     .bottom-bar {animation: 300ms linear forwards animLogoFadeInBottom;}
-    .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
-    .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
+    // .left-bar {animation: 300ms linear forwards animLogoFadeInLeft;}
+    // .right-bar {animation: 300ms linear forwards animLogoFadeInRight;}
 }
 .header .is-hover {
+    background-color: $Air_force_blue_flou;
+    transition: background-color 0.3s ease-in;
 
-    .right-bar {
-        transform: translateY(60%);
-        transition: color .2s, transform .3s ease;
-        background-color: $Ash_grey;
-        // animation: 2.5s 300ms infinite ease-in alternate verticalAnimRight, 200ms 200ms backwards loadingFadeOut;
+    .left-bar, .right-bar,.top-bar, .bottom-bar{
+        opacity: 0;
     }
+}
+
+//     .right-bar {
+//         transform: translateY(60%);
+//         transition: color .2s, transform .3s ease;
+//         background-color: $Ash_grey;
+//         // animation: 2.5s 300ms infinite ease-in alternate verticalAnimRight, 200ms 200ms backwards loadingFadeOut;
+//     }
     
-    .left-bar {
-        background-color: $Ash_grey;
-        transform: translateY(-60%);
-        transition: color .2s, transform .3s ease;
-        // animation: 2.5s 300ms infinite ease-in alternate verticalAnimLeft, 200ms 200ms backwards loadingFadeOut;
-    }
+//     .left-bar {
+//         background-color: $Ash_grey;
+//         transform: translateY(-60%);
+//         transition: color .2s, transform .3s ease;
+//         // animation: 2.5s 300ms infinite ease-in alternate verticalAnimLeft, 200ms 200ms backwards loadingFadeOut;
+//     }
     
-    .top-bar {
-        background-color: $Ash_grey;
-        transform: translateX(-60%);
-        transition: color .2s, transform .3s ease;
-        // animation: 2.5s 300ms infinite ease-in alternate horizontalAnimTop, 200ms 200ms backwards loadingFadeOut;
-    }
+//     .top-bar {
+//         background-color: $Ash_grey;
+//         transform: translateX(-60%);
+//         transition: color .2s, transform .3s ease;
+//         // animation: 2.5s 300ms infinite ease-in alternate horizontalAnimTop, 200ms 200ms backwards loadingFadeOut;
+//     }
     
-    .bottom-bar {
-        background-color: $Ash_grey;
-        transform: translateX(60%);
-        transition: color .2s, transform .3s ease;
-        // animation: 2.5s 300ms infinite ease-in alternate horizontalAnimBottom, 200ms 200ms backwards loadingFadeOut;
-    }
-}
+//     .bottom-bar {
+//         background-color: $Ash_grey;
+//         transform: translateX(60%);
+//         transition: color .2s, transform .3s ease;
+//         // animation: 2.5s 300ms infinite ease-in alternate horizontalAnimBottom, 200ms 200ms backwards loadingFadeOut;
+//     }
+// }
 
 
 
-@keyframes animLogoFadeInTop {
-    from {transform: translateX(0%); opacity: 0;}
-    to {transform: translateX(-60%); opacity: 1;}
+// @keyframes animLogoFadeInTop {
+//     from {transform: translateX(0%); opacity: 0;}
+//     to {transform: translateX(-60%); opacity: 1;}
 
-}
-@keyframes animLogoFadeInBottom {
-    from {transform: translateX(0%); opacity: 0;}
-    to {transform: translateX(60%); opacity: 1;}
-}
-@keyframes animLogoFadeInLeft {
-    from {transform: translateY(0%);opacity: 0;}
-    to {transform: translateY(-60%);opacity: 1;}
-}
-@keyframes animLogoFadeInRight {
-    from {transform: translateY(0%); opacity: 0;}
-    to {transform: translateY(60%); opacity: 1;}
-}
+// }
+// @keyframes animLogoFadeInBottom {
+//     from {transform: translateX(0%); opacity: 0;}
+//     to {transform: translateX(60%); opacity: 1;}
+// }
+// @keyframes animLogoFadeInLeft {
+//     from {transform: translateY(0%);opacity: 0;}
+//     to {transform: translateY(-60%);opacity: 1;}
+// }
+// @keyframes animLogoFadeInRight {
+//     from {transform: translateY(0%); opacity: 0;}
+//     to {transform: translateY(60%); opacity: 1;}
+// }
 
 
 /* ---------------------------------------------------------------
