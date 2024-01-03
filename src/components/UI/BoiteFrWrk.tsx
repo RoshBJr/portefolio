@@ -33,6 +33,10 @@ export default function BoiteFrWrk() {
 
                     <LigneCompetence Icone={Icons.WpIcon} 
                             titre={data['section-competence']['section-frameworks-cms'].Cms.wordpress.titre} />
+                    <LigneCompetence Icone={Icons.FireBIcon} 
+                            titre={data['section-competence']['section-frameworks-cms'].Cms.firebase.titre} />
+                    <LigneCompetence Icone={Icons.HBIcon} 
+                            titre={data['section-competence']['section-frameworks-cms'].Cms.hubspot.titre} />
                 </div>
             <div ref={domRef} className="trigger-anim-fwrk"></div>
             </div>

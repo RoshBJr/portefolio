@@ -11,8 +11,8 @@ function App() {
   const [animBurger, setBurgerState] = useState(false);
 
   useEffect(() => {
-    doIt();
     setLoading(true);
+    setTimeout(()=> doIt(), 5000);
     setTimeout(() => {
       setLoading(false);
     }, 4500)
@@ -22,8 +22,8 @@ function App() {
     <div className="App">
       <div className="pattern"></div>
       <MenuContainer animBurger={animBurger} setAnimBurger={setBurgerState} />
-      {/* {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)} */}
-      <Main animBurger={animBurger} setAnimBurger={setBurgerState}/>
+      {loading ? (<Loading/>) :(<Main animBurger={animBurger} setAnimBurger={setBurgerState}/>)}
+      {/* <Main animBurger={animBurger} setAnimBurger={setBurgerState}/> */}
     </div>
   );
 }

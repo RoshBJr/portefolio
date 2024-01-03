@@ -78,7 +78,7 @@
             font-size: clamp(10px, 5vw, 20px);
             color: $Beige;
             @media (min-width: 769px) {
-                text-align: end;
+                text-align: start;
                 padding: 0 5% 0 0;
                 font-size: clamp(15px, 3vw, 20px);
             }

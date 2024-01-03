@@ -49,6 +49,16 @@ export default function BoiteLogiciels() {
                         
                         <LigneCompetence Icone={Icons.FigmaIcon} 
                                 titre={data['section-competence']['section-logiciels'].figma.titre} />
+
+                        <LigneCompetence Icone={Icons.SlackIcon} 
+                                titre={data['section-competence']['section-logiciels'].slack.titre} />
+                                
+                        <LigneCompetence Icone={Icons.LinuxIcon} 
+                                titre={data['section-competence']['section-logiciels'].linux.titre} />
+
+                        <LigneCompetence Icone={Icons.ElementorIcon} 
+                                titre={data['section-competence']['section-logiciels'].elementor.titre} />
+
                  </div>
             
                 <div ref={domRef} className="trigger-anim-log"></div>

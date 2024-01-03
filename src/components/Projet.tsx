@@ -30,6 +30,15 @@ export default function Projet() {
             <TitreSection titre={data['section-projets'].titre} />
 
             <BoiteProjet
+              titre={data['section-projets'].projet6.titre}
+              desc={data['section-projets'].projet6.desc}
+              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.JsIcon/>, <Icons.FbIcon/>]}
+              img={data['section-projets'].projet6.img}
+              projectSrc={data['section-projets'].projet6.liengithub}
+              projectBuild={data['section-projets'].projet6.lienprojet}
+            />
+
+            <BoiteProjet
               titre={data['section-projets'].projet4.titre}
               desc={data['section-projets'].projet4.desc}
               logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.TsIcon/>]}

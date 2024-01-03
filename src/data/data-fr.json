@@ -53,6 +53,12 @@
             "Cms": {
                 "wordpress": {
                     "titre": "Wordpress"
+                },
+                "firebase": {
+                    "titre": "Firebase"
+                },
+                "hubspot": {
+                    "titre": "Hubspot"
                 }
             }
     },
@@ -78,7 +84,17 @@
             },
             "pr": {
                 "titre": "Premiere Pro"
-            } 
+            },
+            "elementor": {
+                "titre": "Elementor"
+            },
+            "slack": {
+                "titre": "Slack"
+            },
+            "linux": {
+                "titre": "Linux"
+            }
+            
         }
     },
 
@@ -119,6 +135,13 @@
             "img": "signets",
             "liengithub": "https://github.com/RoshBJr/signets",
             "lienprojet": "https://signets-roshb.web.app/"
+        },
+        "projet6": {
+            "titre": "CalenChat",
+            "desc": "Ceci est un projet réalisé avec Javascript, HTML5, SCSS, Firebase et React, l'application web  vous permet d'ajouter des commentaires en temps réel avec un compte google, aimer des commentaires, supprimer vos commentaires et voir les commentaires d'autrui et ce à chaque jour comme un calendrier.",
+            "img": "calenchat",
+            "liengithub": "https://github.com/RoshBJr/Project-dump",
+            "lienprojet": "https://tp2-idj-1a294.web.app/"
         }
     },
 
