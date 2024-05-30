@@ -61,7 +61,7 @@
         height: auto;
         
         .titre {
-            color: $Midnight_green_flou;
+            color: $Ash_grey;
             font-size: clamp(1.5em, 7vw, 35px);
             @media (min-width: 769px) {
                 text-align: right;
@@ -100,7 +100,7 @@
             
             .sous-titre {
                 font-size: clamp(1.17em, 6vw, 25px);
-                color: $Midnight_green;
+                color: $Ash_grey;
                 width: 100%;
                 @media (min-width: 769px) {
                     text-align: end;

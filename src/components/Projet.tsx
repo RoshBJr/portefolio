@@ -30,12 +30,21 @@ export default function Projet() {
             <TitreSection titre={data['section-projets'].titre} />
 
             <BoiteProjet
-              titre={data['section-projets'].projet6.titre}
-              desc={data['section-projets'].projet6.desc}
+              titre={data['section-projets'].projet1.titre}
+              desc={data['section-projets'].projet1.desc}
+              logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.NextjsIcon/>, <Icons.TsIcon/>, <Icons.FbIcon/>, <Icons.SanityIcon/>, <Icons.TailwindIcon/>]}
+              img={data['section-projets'].projet1.img}
+              projectSrc={data['section-projets'].projet1.liengithub}
+              projectBuild={data['section-projets'].projet1.lienprojet}
+            />
+
+            <BoiteProjet
+              titre={data['section-projets'].projet7.titre}
+              desc={data['section-projets'].projet7.desc}
               logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.JsIcon/>, <Icons.FbIcon/>]}
-              img={data['section-projets'].projet6.img}
-              projectSrc={data['section-projets'].projet6.liengithub}
-              projectBuild={data['section-projets'].projet6.lienprojet}
+              img={data['section-projets'].projet7.img}
+              projectSrc={data['section-projets'].projet7.liengithub}
+              projectBuild={data['section-projets'].projet7.lienprojet}
             />
 
             <BoiteProjet
@@ -48,21 +57,21 @@ export default function Projet() {
             />
 
             <BoiteProjet
-              titre={data['section-projets'].projet5.titre}
-              desc={data['section-projets'].projet5.desc}
+              titre={data['section-projets'].projet6.titre}
+              desc={data['section-projets'].projet6.desc}
               logos={[<Icons.ReactIcon/>, <Icons.HtmlIcon/>, <Icons.SassIcon/>, <Icons.JsIcon/>, <Icons.FbIcon/>]}
-              img={data['section-projets'].projet5.img}
-              projectSrc={data['section-projets'].projet5.liengithub}
-              projectBuild={data['section-projets'].projet5.lienprojet}
+              img={data['section-projets'].projet6.img}
+              projectSrc={data['section-projets'].projet6.liengithub}
+              projectBuild={data['section-projets'].projet6.lienprojet}
             />
 
             <BoiteProjet
-              titre={data['section-projets'].projet1.titre}
-              desc={data['section-projets'].projet1.desc}
+              titre={data['section-projets'].projet5.titre}
+              desc={data['section-projets'].projet5.desc}
               logos={[<Icons.CSharpIcon/>, <Icons.UnityIcon/>]}
-              img={data['section-projets'].projet1.img}
-              projectSrc={data['section-projets'].projet1.liengithub}
-              projectBuild={data['section-projets'].projet1.lienprojet}
+              img={data['section-projets'].projet5.img}
+              projectSrc={data['section-projets'].projet5.liengithub}
+              projectBuild={data['section-projets'].projet5.lienprojet}
             />
             <BoiteProjet
               titre={data['section-projets'].projet2.titre}
