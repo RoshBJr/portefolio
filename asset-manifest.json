@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portefolio/static/css/main.5c97c530.css",
-    "main.js": "/portefolio/static/js/main.4c2c794a.js",
+    "main.js": "/portefolio/static/js/main.895cbfec.js",
     "static/media/calenchat.png": "/portefolio/static/media/calenchat.1d255ddb707b87a44ec3.png",
     "static/media/lfo.png": "/portefolio/static/media/lfo.3f3c12e60861569a4a19.png",
     "static/media/animelog.png": "/portefolio/static/media/animelog.8586ba6c400de1ecd500.png",
@@ -11,10 +11,10 @@
     "static/media/kotlinMobile.png": "/portefolio/static/media/kotlinMobile.5d71fcf4f90ebb88cdc4.png",
     "index.html": "/portefolio/index.html",
     "main.5c97c530.css.map": "/portefolio/static/css/main.5c97c530.css.map",
-    "main.4c2c794a.js.map": "/portefolio/static/js/main.4c2c794a.js.map"
+    "main.895cbfec.js.map": "/portefolio/static/js/main.895cbfec.js.map"
   },
   "entrypoints": [
     "static/css/main.5c97c530.css",
-    "static/js/main.4c2c794a.js"
+    "static/js/main.895cbfec.js"
   ]
 }
