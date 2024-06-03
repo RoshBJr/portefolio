@@ -1,12 +1,15 @@
-import data from '../data/data-fr.json';
+import Cookies from 'universal-cookie';
+import data from '../data/data.json';
 
 
 export default function doIt() {
+    const cookies = new Cookies();
+    const lang = cookies.get('lang') ?? 'fr';
     // const variables
-    const firstH = {dom: document.querySelector('.titre-projet'), text: data['section-presentation']['titre-projet']};
-    const secondH = {dom: document.querySelector('.nom'), text: data['section-presentation']['nom']};
-    const thirdH = {dom: document.querySelector('.hello'), text: data['section-presentation']['greeting1']};
-    const fourthH = {dom: document.querySelector('.world'), text: data['section-presentation']['greeting2']};
+    const firstH = {dom: document.querySelector('.titre-projet'), text: data[lang]['section-presentation']['titre-projet']};
+    const secondH = {dom: document.querySelector('.nom'), text: data[lang]['section-presentation']['nom']};
+    const thirdH = {dom: document.querySelector('.hello'), text: data[lang]['section-presentation']['greeting1']};
+    const fourthH = {dom: document.querySelector('.world'), text: data[lang]['section-presentation']['greeting2']};
 
 
     setTimeout( appendText, 200, firstH['dom'], firstH['text'], 0);

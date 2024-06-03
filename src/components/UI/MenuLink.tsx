@@ -1,3 +1,4 @@
+import Cookies from 'universal-cookie';
 import './MenuLink.scss';
 
 interface UiProps {
@@ -6,12 +7,23 @@ interface UiProps {
     linkSection: string;
     animBurger?:boolean;
     setAnimBurger?:Function;
+    langSwitcher?: boolean
 }
 
-export default function MenuLink({text, barColor, linkSection, animBurger, setAnimBurger}:UiProps) {
+export default function MenuLink({text, barColor, linkSection, animBurger, setAnimBurger, langSwitcher}:UiProps) {
 
     const closeMenu = () => 
     {
+        if(langSwitcher) {
+            const cookies = new Cookies();
+            if(cookies.get('lang')) {
+                cookies.remove('lang');
+                window.location.reload();
+            } else {
+                cookies.set('lang', 'en');
+                window.location.reload();
+            }
+        }
         if(setAnimBurger != null) {
             setAnimBurger(!animBurger);
         } else {

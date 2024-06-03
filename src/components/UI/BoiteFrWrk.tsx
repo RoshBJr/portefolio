@@ -1,15 +1,20 @@
-import data from "../../data/data-fr.json";
+import data from "../../data/data.json";
 import LigneCompetence from "./LigneCompetence";
 import * as Icons from "../UI/Icons";
 import "./BoiteCompetence.scss";
 import { useRef, useState, useEffect } from "react";
+import Cookies from "universal-cookie";
 
 export default function BoiteFrWrk() {
   const [isVisible, setVisible] = useState(false);
 
   const domRef = useRef<HTMLDivElement>(null);
 
+  const [lang, setLang] = useState<"fr" | "en">("fr");
+  
   useEffect(() => {
+    const cookies = new Cookies();
+    setLang(cookies.get("lang") ?? 'fr');
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setVisible(true);
@@ -24,27 +29,27 @@ export default function BoiteFrWrk() {
     <>
       <div className={`boite-competence ${isVisible ? "is-visible" : ""}`}>
         <h2 className="boite-titre">
-          {data["section-competence"]["section-frameworks-cms"].titre}
+          {data[lang]["section-competence"]["section-frameworks-cms"].titre}
         </h2>
         <div className="container-ligne">
           <LigneCompetence
             Icone={Icons.ReactIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].frameWrk
+              data[lang]["section-competence"]["section-frameworks-cms"].frameWrk
                 .react.titre
             }
           />
           <LigneCompetence
             Icone={Icons.NextjsIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].frameWrk
+              data[lang]["section-competence"]["section-frameworks-cms"].frameWrk
                 .nextjs.titre
             }
           />
           <LigneCompetence
             Icone={Icons.StorybookIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].frameWrk
+              data[lang]["section-competence"]["section-frameworks-cms"].frameWrk
                 .storybook.titre
             }
           />
@@ -52,35 +57,35 @@ export default function BoiteFrWrk() {
           <LigneCompetence
             Icone={Icons.WpIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].Cms.wordpress
+              data[lang]["section-competence"]["section-frameworks-cms"].Cms.wordpress
                 .titre
             }
           />
           <LigneCompetence
             Icone={Icons.FireBIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].Cms.firebase
+              data[lang]["section-competence"]["section-frameworks-cms"].Cms.firebase
                 .titre
             }
           />
           <LigneCompetence
             Icone={Icons.HBIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].Cms.hubspot
+              data[lang]["section-competence"]["section-frameworks-cms"].Cms.hubspot
                 .titre
             }
           />
           <LigneCompetence
             Icone={Icons.DirectusIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].Cms.directus
+              data[lang]["section-competence"]["section-frameworks-cms"].Cms.directus
                 .titre
             }
           />
           <LigneCompetence
             Icone={Icons.SanityIcon}
             titre={
-              data["section-competence"]["section-frameworks-cms"].Cms.sanity
+              data[lang]["section-competence"]["section-frameworks-cms"].Cms.sanity
                 .titre
             }
           />

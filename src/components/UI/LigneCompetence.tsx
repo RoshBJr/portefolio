@@ -1,5 +1,5 @@
 import { JsIcon } from "./Icons";
-import data from '../../data/data-fr.json';
+import data from '../../data/data.json';
 import '../UI/LigneCompetence.scss';
 
 interface Props {
