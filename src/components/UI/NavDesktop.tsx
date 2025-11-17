@@ -12,7 +12,7 @@ export default function NavDesktop() {
     const cookies = new Cookies();
     setLang(cookies.get("lang") ?? 'fr');
   }, []);
-
+  
   return (
     <div className="container-links">
       <MenuLink
